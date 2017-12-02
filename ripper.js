@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <script>
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '389715768118347',
@@ -38,11 +31,3 @@
 
 
        }
-    </script>
-  </body>
-
-<?php
-echo "hello world"
-?>
-
-</html>
