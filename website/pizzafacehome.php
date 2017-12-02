@@ -43,22 +43,22 @@
 
 <?php
 	session_start();
-	
+
 	#THIS IS REALLY BAD, MAKE SURE TO USE DATABASE
 	$username = "user";
 	$password = "password";
-	
+
 	if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
 			header("Location: success.php");
 			#profile page or whatever they need to login for
-		
+
 	}
 	if(isset($_POST['username']) && isset($_POST['password'])){
 		if ($_POST['username'] == $username && $_POST['password'] == $password){
 		$_SESSION['loggedin'] = true;
-		header("Location: success.php")
+		header("Location: success.php");
 		}
-		
+
 	}
 ?>
 <<<<<<< HEAD
